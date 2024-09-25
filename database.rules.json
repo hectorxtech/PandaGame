@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
   "rules": {
@@ -5,3 +6,18 @@
     ".write": false
   }
 }
+=======
+
+{
+  "rules": {
+    ".read": "auth != null",   // Только аутентифицированные пользователи могут читать данные
+    ".write": "auth != null",  // Только аутентифицированные пользователи могут изменять данные
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",  // Пользователь может читать только свои данные
+        ".write": "$uid === auth.uid"  // Пользователь может изменять только свои данные
+      }
+    }
+  }
+}
+>>>>>>> b538269d2308a788df467ed053b85850c9606a40

@@ -1,13 +1,16 @@
 {
   "name": "pandagame",
   "version": "1.0.0",
-  "description": "Описание вашего проекта",
+  "description": "Крипто-игра в Telegram с использованием Firebase",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "firebase emulators:start",
+    "build": "echo 'Build script goes here'", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Ваше имя",
-  "license": "ISC"
+  "author": "hectorxtech",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.0.0"  // Убедитесь, что версия актуальна
+  }
 }

@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Правило для всех документов
+    match /{document=**} {
+      allow read, write: if request.auth != null; // Только авторизованные пользователи могут читать и записывать данные
+    }
+  }
+}

@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "firebase emulators:start",
-    "build": "echo 'Build script goes here'", 
+    "build": "echo 'Build script goes here'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "hectorxtech",
   "license": "ISC",
   "dependencies": {
-    "firebase": "^9.0.0"  // Убедитесь, что версия актуальна
+    "firebase": "^9.0.0"
   }
 }
